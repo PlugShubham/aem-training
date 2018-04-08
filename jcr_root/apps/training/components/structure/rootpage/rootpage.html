@@ -1,0 +1,21 @@
+<h1>You are in ${currentPage.title} - Bracket IDE</h1>
+<div data-sly-resource="${@path='title',resourceType='/libs/wcm/foundation/components/title'}" />
+
+<div data-sly-resource="${@path='nav',resourceType='/apps/training/components/structure/nav'}" />
+
+<div data-sly-use.jsobject="${'script.js' @value1='adobe',value2='System'}">
+
+${jsobject.greetings}
+${jsobject.pageTitle}
+
+</div>    
+<div data-sly-use.logic="${'Logic' @value1='Shubham'}">
+
+${logic.message}
+    
+</div>  
+
+
+<div data-sly-use.productTemplate="htltemplate.html" data-sly-call="${productTemplate.product @name='shirt',price=80}"/>
+
+<div data-sly-include="footer.html" />

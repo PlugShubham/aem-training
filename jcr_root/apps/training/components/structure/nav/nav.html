@@ -1,0 +1,10 @@
+<div class="topnav" data-sly-use.topnav="TopNav">
+    <ul class="topnav">
+        <li class="nav_home_fixed">
+            <a class="nav_home_fixed" href="/content/training/en.html">Home</a>
+        </li>
+        <li class="topnav" data-sly-repeat="${topnav.items}">
+            <a href="${item.path}">${item.title}</a>
+        </li>
+    </ul>
+</div>
